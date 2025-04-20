@@ -28,17 +28,30 @@ body {
 }
 
 button {
-    padding: 8px 12px;
-    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    background: linear-gradient(145deg, #6e7fdb, #4b5e99);
+    color: white;
     cursor: pointer;
     border: none;
-    border-radius: 6px;
-    background: #007bff;
-    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background: #0056b3;
+    background: linear-gradient(145deg, #4b5e99, #6e7fdb);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .dark-mode {
